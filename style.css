@@ -1,17 +1,23 @@
 *{
   border-sizing: border box;
 }
+.container{
+  text-align: center;
+}
+
 table {
   width:50%;
   height: 50%;
   border: 1px solid black;
   margin:auto;
+  margin-top: 100px;
+
 
 }
 table>th, table>td{
   border: 1px solid black;
-  width: 50px 50px;;
-  height: 50px 50px;
+  width: 70px 50px;;
+  height: 70px 50px;
 }
 .colonna{
   width: 50px;
@@ -19,4 +25,5 @@ table>th, table>td{
   border: 1px solid black;
   text-align: center;
   font-size: 30px;
+  box-sizing: border-box;
 }
