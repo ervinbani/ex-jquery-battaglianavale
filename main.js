@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 
-  var arraybomba=[];
-  for(var i=0;i<15;i++){
+  var arraybomba=[];//array vuoto dove vado a memorizzare i valori random
+  for(var i=0;i<15;i++){//ciclo for
     var num=random()
     if(!arraybomba.includes(num)){
     arraybomba.push(num);
@@ -11,9 +11,11 @@ $(document).ready(function() {
   }
   console.log(arraybomba);
 
-
+//variabile che conta il numero delle bombe
   var bombe=0;
+  //variabile per memorizzare il numero
   var vuote=0;
+
 
   $(".colonna").click(function(){
     console.log($(this).attr("id"));
@@ -29,10 +31,10 @@ $(document).ready(function() {
      $('#numbombe').html(bombe);
 
    }
-     else   {
+     else  {
        $(this).css('background', 'green');
        voute=vuote+1;
-       $('#casellevuote').html(vuote);
+       $('#cellevuote').html(vuote);
 
      }
 
