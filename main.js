@@ -33,7 +33,7 @@ $(document).ready(function() {
    }
      else  {
        $(this).css('background', 'green');
-       voute=vuote+1;
+       vuote=vuote+1;
        $('#cellevuote').html(vuote);
 
      }
